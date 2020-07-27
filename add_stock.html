@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add stock page</title>
+</head>
+<body>
+<nav><a href="home_page_customer.html">home page</a>
+		<a href="expense.html">expense</a>
+		<a href="see_transection.html">transection</a>
+		<a href="add_party.html">add party</a>
+		<a href="add_stock.html">add stock</a>
+		<a href="index_customer.html">login</a>
+	</nav>
+	<form>
+		<header><h3><b>ADD item</b></h3></header>
+		<table border="1">
+			<tr>
+				<td>
+					<iframe src="" alt="no image"></iframe>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="file" name="img"></td>
+			</tr>
+			<tr>
+				<td>item name:</td>
+				<td>
+					<input type="text" name="item_name">
+				</td>
+			</tr>
+			<tr>
+				<td>party code (barcode):</td>
+				<td><input type="number" name="item_code"></td>
+			</tr>
+			<tr>
+				<td>sale price:<input type="text" name="sale_price"></td>
+				<td>
+					tex type<input type="text" name="text_type" list="tex_type">
+				</td>
+			</tr>
+			<tr>
+				<td>purchase price:<input type="text" name="purchase_price"></td>
+				<td>
+					tex type<input type="text" name="text_type" list="tex_type">
+				</td>
+			</tr>
+			<tr>
+				<td>qty:<input type="number" name="quantity"></td>
+				<td>
+				purchase date:<input type="date" name="purchase_date">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					minimum quantity:<input type="number" name="minimum_quantity">
+				</td>
+			</tr>
+			<tr>
+				<td><button name="save">save</button></td>
+				<td><button name="save_&_new">save & new</button></td>
+			</tr>
+			
+		</table>
+		<datalist id="tex_type">
+				<option value="include">tex included</option>
+				<option value="exclude">tex exclude</option>
+		</datalist>
+	</form>
+	<footer><p>vyapar managment<p>
+		<p>customer support:9157365732</p>
+		</footer>
+</body>
+</html>
