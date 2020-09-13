@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<style >
+		*{
+			margin: 0px;
+			padding: 0px;;
+		}
+		
+		
+		.main{
+			margin-left: 16%;
+			min-height: 100vh;
+			background-color: rgb(204, 255, 255,0.7);
+		}
+		.card-box{
+			margin:10px;
+			padding: 5px;
+		}
+		.container-fluid{
+			padding-left: 20px;
+		}
+		
+		
+    </style>
+    
+</head>
+<body>
+	
+		<ul>
+			<li><a  href="home_page_customer.html">home page</a></li>
+			<li><a   href="expense.html">expense</a></li>
+			<li><a  href="see_transection.html">transection</a></li>
+			<li><a   href="add_party.html">add party</a></li>
+			<li><a  href="add_stock.html">add stock</a></li>
+			<li><a   href="index_customer.html">login</a></li>
+		</ul>
+	<div class="main card">	
+		<div class="container-fluid">
+			<h6>Sales:</h6>
+			<div class="row">
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>Sales</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>To Recieve</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+			</div>
+			<h6>Purchase:</h6>
+			<div class="row">
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>Purchase</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>Expence</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>To Pay</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>Stock value</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+			</div>
+			<h6>Cash & Bank:</h6>
+			<div class="row">
+				<div class="col-sm-2 card shadow card-box">
+					<div class="card-head"><head>Cash in hand</head></div>
+					<div class="card-body"><p>some mount </p></div>
+				</div>
+			</div>
+		<div>
+		<button  name="sale" class="button shadow" id="sale_button" onclick="sale()">
+			<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+			  </svg>
+		  sale</button>
+		<button name="purchase" class="button shadow" id="purchase_button" onclick="purchase()">
+			<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+			  </svg>
+			purchase
+		</button>
+	</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+		function sale(){
+			location.href = "add_sale_transection.html";
+		}
+		function purchase(){
+			location.href = "add_purchase_transection.html";
+		}
+	</script>
+	<footer class="page-footer">	
+		<div class="row text-center text-light">
+			<div class="col-lg-12 "> we are currently working on vyapar project</div>
+		</div>
+		<div class="row text-light text-center">
+			<div class="col-lg-12">contact me on : +9157365732</div>
+		</div>
+		
+		<div class="row text-center text-light">
+			<div class="col-lg-12">follow us on</div>
+		</div>
+		
+	</footer>
+	</div>
+</body>
+</html>

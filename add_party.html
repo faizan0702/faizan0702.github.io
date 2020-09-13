@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add party page</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style>
+		.main{
+			margin-left: 15%;
+			background-color: rgb(204, 255, 255,0.7);
+			min-height: 100vh;
+		}
+		.border{
+			border-width: 2px;
+		}
+		.card{
+			width: 40%;
+			margin: auto;
+		}
+		header{
+			height: 80px;
+			text-align: center;
+			background-color:rgb(71, 71, 209,0.6);
+			font-size: 50px;
+			font-style: italic;
+			font-weight: bold;
+		}
+		input{
+			border-width: 0px;
+			outline: none;
+			border-bottom-width: 1px;
+		}
+		.save-button{
+			background-color:rgb(71, 71, 209,0.6);
+		}
+		.save-button:hover{
+			background-color:rgb(71, 71, 209,0.7);			
+		}
+		footer{
+			min-height: 300px;
+			background-color: #333333;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a  href="home_page_customer.html">home page</a></li>
+		<li><a   href="expense.html">expense</a></li>
+		<li><a  href="see_transection.html">transection</a></li>
+		<li><a   href="add_party.html">add party</a></li>
+		<li><a  href="add_stock.html">add stock</a></li>
+		<li><a   href="index_customer.html">login</a></li>
+	</ul>
+
+	<div class="main">
+		<div class="card border shadow">
+			<header>ADD party</header>
+			<div class="card-body row">
+				<div class="col-lg-6">
+					<input type="text" placeholder="name" name="party_name">
+				</div>
+			</div>
+			<div class="card-body row">
+				<div class="col-lg-6"><input type="text" placeholder="party type" name="party_type" list="party_type"></div>
+			</div>
+			<div class="card-body row">
+				<div class="col-lg-6"><input type="textarea" placeholder="business addr" name="address"></div>
+				<div class="col-lg-6"><input type="text" placeholder="state" name="state" list="state"></div>
+			</div>
+			<div class="card-body row">
+				<div class="col-lg-6"><input type="number" placeholder="phone no" name="phone_no"></div>
+				<div class="col-lg-6"><input type="email" placeholder="email-id" name="emailid"></div>
+			</div>
+			<div class=" card-body row">
+				<div class="col-lg-6"><input type="textarea" placeholder="business addr" name="address"></div>
+				<div class="col-lg-6"><input type="text" placeholder="state" name="state" list="state"></div>
+			</div>
+			<div class=" card-body row">
+				<div class="col-lg-6">
+					<input type="number" placeholder="current balance" name="current_balance">
+				</div>
+			</div>
+			<div class=" card-body row">		
+					<div class="col-lg-6">payable:<input type="radio" id="payable" value =" payable" name="credit-debit"></div>		
+					<div class="col-lg-6">recivable:<input type="radio" id="receivable" value =" receivable" name="credit-debit"></div>
+			</div>
+			<div class=" card-body row">
+				<div class="col-lg-6 "><button class="save-button" name="save">save</button></div>
+				<div class="col-lg-6"><button class="save-button" name="save_&_new">save & new</button></div>
+			</div>
+		</div>
+	</div>		
+		<datalist id="state">
+				<option value="gujrat">gujrat</option>
+				<option value="maharastra">maharastra</option>
+				<option value="madyapradesh">madyapradesh</option>
+				<option value="delhi">delhi</option>
+				<option value="panjab">panjab</option>
+			</datalist>
+		<datalist id="party_type">
+			<option value="customer">customer</option>
+			<option value="businessman-regular">businessman-regular</option>
+			<option value="businessman-composite">businessman-composite</option>
+		</datalist>
+	
+		<footer class="page-footer">	
+			<div class="row text-center text-light">
+				<div class="col-lg-12 "> we are currently working on vyapar project</div>
+			</div>
+			<div class="row text-light text-center">
+				<div class="col-lg-12">contact me on : +9157365732</div>
+			</div>
+			
+			<div class="row text-center text-light">
+				<div class="col-lg-12">follow us on</div>
+			</div>
+			
+		</footer>
+
+</body>
+</html>

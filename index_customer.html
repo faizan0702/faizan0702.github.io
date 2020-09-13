@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style>
+		.main{
+			background-color: rgb(204, 255, 255,0.7);
+			min-height: 100vh;
+		}
+		.card{
+			width: 30%;
+			margin: auto;
+			height: 70vh;
+		}
+		header{
+			height: 80px;
+			text-align: center;
+			background-color:rgb(71, 71, 209,0.6);
+			font-size: 50px;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.col-lg-8{
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="card border shadow">
+			<header>Login page</header>
+		<form action="registraction_customer.html">
+		
+			<div class=" card-body row">
+				<div class="col-lg-8 ">
+					<input type="input" placeholder="email_id" id="email" class="form-control form-control-sm" name="emailid" placeholder="E-mailid"  required>
+				</div>
+			</div>
+			<div class=" card-body row text-center">
+				<div class="col-lg-8">
+					<input type="password" placeholder="password" id="password" name="password" class="form-control form-control-sm" placeholder="password"  required>
+				</div>
+			</div>
+			<div class=" card-body row text-center">
+				<div class="col-lg-6"><button  id="sign_up">sign in</button></div>
+				<div class="col-lg-6"><button  id="login" formaction="home_page_customer.html" >login</button></div>
+			</div>
+			<div class=" card-body row text-center">
+				<div class="col-lg-6"><a href="forgot_password.html">forgot password</a></div>
+			</div>
+		</form>
+	</div>
+	</div>
+	<script type="text/javascript">
+		let sign_up = document.queryselector
+		let lo
+		function validation(){
+			
+       
+ 			var email = document.getElementById('email');
+ 			var password = document.getElementById('password');
+		
+		    
+		    // var result = email.match(email_patt);
+		    
+			//document.getElementById('sign_up').formaction ="www.google.com";
+		}
+	</script>
+	<footer class="page-footer">	
+		<div class="row text-center text-light">
+			<div class="col-lg-12 "> we are currently working on vyapar project</div>
+		</div>
+		<div class="row text-light text-center">
+			<div class="col-lg-12">contact me on : +9157365732</div>
+		</div>
+		
+		<div class="row text-center text-light">
+			<div class="col-lg-12">follow us on</div>
+		</div>
+		
+	</footer>
+</body>
+</html>
