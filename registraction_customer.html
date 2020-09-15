@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registraction page</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("input").mouseout(function(){
+				if($(this).val()==''){
+					$(this).css({
+					   "border" : "3px solid red",	
+					})
+				}else{
+					$(this).css({
+						"border" : "1px solid black",	
+					 })
+				}
+			})
+		});
+	</script>
+	<style>
+		.main{
+			margin-left: 15%;
+			background-color: rgb(204, 255, 255,0.7);
+			min-height: 100vh;
+		}
+		.border{
+			border-width: 2px;
+		}
+		.card{
+			width: 40%;
+			margin: auto;
+		}
+		header{
+			height: 80px;
+			text-align: center;
+			background-color:rgb(71, 71, 209,0.6);
+			font-size: 50px;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.row{
+			margin: 5px;
+			padding: 10px;
+		}
+		input{
+			border-width: 0px;
+			outline: none;
+			border-bottom-width: 1px;
+		}
+		footer{
+			min-height: 300px;
+			background-color: #333333;
+		}
+		.image{
+			height: 15vh;
+			border: solid;
+			border-width: 1px;
+		}
+		
+		#register_button{
+			background-color:rgb(71, 71, 209,0.6);
+		}
+		#register_button:hover{
+			background-color:rgb(71, 71, 209,0.7);			
+		}
+	</style>	
+</head>
+<body>
+	<ul>
+		<li><a  href="home_page_customer.html">home page</a></li>
+		<li><a   href="expense.html">expense</a></li>
+		<li><a  href="see_transection.html">transection</a></li>
+		<li><a   href="add_party.html">add party</a></li>
+		<li><a  href="add_stock.html">add stock</a></li>
+		<li><a   href="index_customer.html">login</a></li>
+	</ul>
+	<form>
+		<div class="main">
+			<div class="card border shadow">
+		<header><h2><b> new registraction</b></h2></header>
+		
+			<div class="card-body row">
+				<div class="col-lg-6  image">
+					<figure ><img src="" alt="no image">
+					</figure>
+				</div>		
+			</div>
+			<div class="card-body row">
+				<div class="col-lg-6">
+					<input type="file" name="img">
+				</div>
+			</div>
+			<div class="card-body row">
+				<div class="col-lg-6">
+						<input type="num" placeholder="Gst no" name="gst_no">
+				</div>				
+				</div>	
+			<div class="card-body row">
+				<div class="col-lg-6">
+					<input type="text" placeholder="business name" name="business_name">			
+				</div>
+			</div>
+			
+			<div class="card-body row">
+				<div class="col-lg-6"><input type="number" placeholder="phone no" name="phone_no"></div>
+				<div class="col-lg-6"><input type="email" placeholder="email-id" name="emailid"></div>
+			</div>
+			<div class="card-body row">
+				<div class="col-lg-6"><input type="textarea" placeholder="business addr" name="address"></div>
+				<div class="col-lg-6"><input type="text" placeholder="state" name="state" list="state"></div>
+			</div>
+			<datalist id="state">
+				<option value="gujrat">gujrat</option>
+				<option value="maharastra">maharastra</option>
+				<option value="madyapradesh">madyapradesh</option>
+				<option value="delhi">delhi</option>
+				<option value="panjab">panjab</option>
+			</datalist>
+			<div class=" card-body row">
+				<div class="col-lg-4">
+					<button formaction="#" name="done" id="register_button">done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</form>
+	<footer class="page-footer">	
+		<div class="row text-center text-light">
+			<div class="col-lg-12 "> we are currently working on vyapar project</div>
+		</div>
+		<div class="row text-light text-center">
+			<div class="col-lg-12">contact me on : +9157365732</div>
+		</div>
+		
+		<div class="row text-center text-light">
+			<div class="col-lg-12">follow us on</div>
+		</div>
+		
+	</footer>
+</body>
+</html>
